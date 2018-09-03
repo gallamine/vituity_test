@@ -36,7 +36,7 @@ def predict():
 	age = request.args.get('age', default = 60.0, type = float)
 	pctMphr = request.args.get('pctMphr', default = 73.0, type = float)
 	hxofCig_heavy = request.args.get('hxofCig_heavy', default = 0.0, type = float)
-	restwma = request.args.get('restwma', default = 10.0, type = float)
+	restwma = request.args.get('restwma', default = 0.0, type = float)
 	hxofDM = request.args.get('hxofDM', default = 0.0, type = float)
 	dobdose = request.args.get('dobdose', default = 20.0, type = float)
 	hxofCig_moderate = request.args.get('hxofCig_moderate', default = 0.0, type = float)

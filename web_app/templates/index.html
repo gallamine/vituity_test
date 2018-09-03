@@ -51,38 +51,38 @@
 {% endwith %}
 
     
-<form action="/predict" id="ajaxform" >
+<form action="predict" id="ajaxform" >
 <input type="checkbox" name="chestpain" value="1.0" onchange="mySubmit(this.form)">Patient has chestpain? <Br>
-<input type="checkbox" name="hxofCABG" value="0.0" onchange="mySubmit(this.form)">hxofCABG       <Br>
-<input type="text" name="mbp" value="148.0" onchange="mySubmit(this.form)">MBP                 <Br>
-<input type="checkbox" name="hxofMI" value="0.0" onchange="mySubmit(this.form)">hxofMI                 <Br>
+<input type="checkbox" name="hxofCABG" value="1.0" onchange="mySubmit(this.form)">patient history of bypass surgery        <Br>
+<input type="text" name="mbp" value="140.0" onchange="mySubmit(this.form)">maximum blood pressure                 <Br>
+<input type="checkbox" name="hxofMI" value="1.0" onchange="mySubmit(this.form)">patient history of heart attack                  <Br>
 
 <input type="radio" name="gender" value="male" onchange="mySubmit(this.form)">Male<Br>
-<input type="radio" name="gender" value="female" onchange="mySubmit(this.form)">Female<Br>
+<input type="radio" name="gender" value="female" checked="checked" onchange="mySubmit(this.form)">Female<Br>
 <Br>
 <input type="radio" name="hxoCig" value="non-smoker" onchange="mySubmit(this.form)">non-smoker<Br>
-<input type="radio" name="hxoCig" value="moderate" onchange="mySubmit(this.form)">moderate smoker<Br>
+<input type="radio" name="hxoCig" value="moderate" checked="checked" onchange="mySubmit(this.form)">moderate smoker<Br>
 <input type="radio" name="hxoCig" value="heavy" onchange="mySubmit(this.form)">heavy smoker<Br>
 <br>
 <input type="radio" name="ecg" value="normal" onchange="mySubmit(this.form)">Normal ECG<Br>
-<input type="radio" name="ecg" value="equivocal" onchange="mySubmit(this.form)">equivocal ECG<Br>
+<input type="radio" name="ecg" value="equivocal" checked="checked" onchange="mySubmit(this.form)">equivocal ECG<Br>
 <input type="radio" name="ecg" value="MI" onchange="mySubmit(this.form)">MI ECG<Br>
 <br>
-<input type="checkbox" name="hxofPTCA" value="0.0" onchange="mySubmit(this.form)">hxofPTCA                 <Br>
-<input type="text" name="age" value="60.0" onchange="mySubmit(this.form)">age                      <Br>
-<input type="text" name="pctMphr" value="73.0" onchange="mySubmit(this.form)">pctMphr                  <Br>
-<input type="checkbox" name="restwma" value="1.0" onchange="mySubmit(this.form)">restwma                   <Br>
-<input type="checkbox" name="hxofDM" value="0.0" onchange="mySubmit(this.form)">hxofDM                    <Br>
-<input type="text" name="dobdose" value="20.0" onchange="mySubmit(this.form)">dobdose                  <Br>
-<input type="text" name="dpmaxdo" value="17316.0" onchange="mySubmit(this.form)">dpmaxdo              <Br>
-<input type="text" name="basebp" value="136.0" onchange="mySubmit(this.form)">basebp                  <Br>
-<input type="text" name="maxhr" value="117.0" onchange="mySubmit(this.form)">maxhr                  <Br>
-<input type="text" name="sbp" value="148.0" onchange="mySubmit(this.form)">sbp                     <Br>
-<input type="text" name="baseEF" value="64.0" onchange="mySubmit(this.form)">baseEF                   <Br>
-<input type="text" name="pkhr" value="117.0" onchange="mySubmit(this.form)">pkhr                   <Br>
-<input type="checkbox" name="hxofHT" value="0.0" onchange="mySubmit(this.form)">hxofHT                    <Br>
-<input type="text" name="posSE" value="0.0" onchange="mySubmit(this.form)">posSE                     <Br>
-<input type="text" name="bhr" value="72.0" onchange="mySubmit(this.form)">bhr                      <Br>
+<input type="checkbox" name="hxofPTCA" value="1.0" onchange="mySubmit(this.form)">patient history of angioplasty                 <Br>
+<input type="text" name="age" value="68.0" onchange="mySubmit(this.form)">age                      <Br>
+<input type="text" name="pctMphr" value="89.0" onchange="mySubmit(this.form)">% of maximum predicted heart rate achieved                  <Br>
+<input type="checkbox" name="restwma" value="1.0" onchange="mySubmit(this.form)">cardiologist sees wall motion anomoly on echocardiogram                    <Br>
+<input type="checkbox" name="hxofDM" value="1.0" checked="checked" onchange="mySubmit(this.form)">patient history of diabetes                     <Br>
+<input type="text" name="dobdose" value="30.0" onchange="mySubmit(this.form)">dobdose                  <Br>
+<input type="text" name="dpmaxdo" value="18900.0" onchange="mySubmit(this.form)">dpmaxdo              <Br>
+<input type="text" name="basebp" value="102.0" onchange="mySubmit(this.form)">basal blood pressure                  <Br>
+<input type="text" name="maxhr" value="135.0" onchange="mySubmit(this.form)">maximum heart rate                  <Br>
+<input type="text" name="sbp" value="100.0" onchange="mySubmit(this.form)">systolic blood pressure                     <Br>
+<input type="text" name="baseEF" value="23.0" onchange="mySubmit(this.form)">baseline cardiac ejection fraction (a measure of the heart's pumping efficiency)                   <Br>
+<input type="text" name="pkhr" value="137.0" onchange="mySubmit(this.form)">peak heart rate                   <Br>
+<input type="checkbox" name="hxofHT" value="1.0" checked="checked" onchange="mySubmit(this.form)">patient history of hypertension                     <Br>
+<input type="text" name="posSE" value="0.0" onchange="mySubmit(this.form)">stress echocardiogram was positive                      <Br>
+<input type="text" name="bhr" value="83.0" onchange="mySubmit(this.form)">basal heart rate                      <Br>
 </form>
 
   <br>
